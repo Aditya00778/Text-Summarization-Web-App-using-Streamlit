@@ -73,7 +73,8 @@ def original_text(text):
     
 
 st.title("Summarize Your Document !!!")
-text = st.text_area("Enter the Text")
+a = st.text_area("Enter the Text")
+text = str(a)
 if st.button("Summarize"):
     if len(text)<100:
         st.write("Enter Valid Text (Atleast 100 words)")
